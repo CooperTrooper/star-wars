@@ -35,12 +35,31 @@
 <p class="q">first question</p>
 <p class="q">(1) ____ it chewie, In this line, what goes into the blank</p>
 <div class="buttongroup">
-<button onclick="correct"> Punch </button>
-<button onclick="incorrect"> Push </button>
+<button onclick="correct()"> Punch </button>
+<button onclick="incorrect()"> Push </button>
 </div>
+<h1 id="q1"></h1>
+<h1 id="q1 inc"></h1>
+<p class="q">(2)Luke skywalkers robot conpanions are called C-3P0 and ____</p>
+<div class="buttongroup">
+<button onclick="incorrect2()">R3D3</button>
+<button onclick="correct2()">R2D2</button>
+</div>
+<h1 id="q2"></h1>
 </body>
 <script>
-	
+	function correct() {
+    	document.getElementById("q1").innerHTML = "correct";
+        }
+        
+    function incorrect() {
+    	document.getElementById("q1 inc").innerHTML = "you need to watch more star wars, you got it incorrect";
+        }
+        
+    function correct2() {
+    	document.getElementById("q2").innerHTML = "correct";
+        }
+    
 </script>
 
 </html>
