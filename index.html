@@ -20,12 +20,13 @@
     	text-align: center;
         }
         
+        
     button{
     	color: gold;
         border:none;
         background-color:red;
-        width: 50px;
-        height: 50px;
+        width: 70px;
+        height: 70px;
         }
 </style>
 <title>Cooper's...STAR WARS TRIVIA</title>
@@ -46,6 +47,13 @@
 <button onclick="correct2()">R2D2</button>
 </div>
 <h1 id="q2"></h1>
+<h1 id="q2 inc"></h1>
+<p class="q">(3) Han solo was frozen in ______</p>
+<div class="buttongroup">
+<button onclick="incorrect3()">Titanium</button>
+<button onclick="correct3()"px>Carbonite</button>
+<h1 id="q3 inc"></h1>
+<h1 id="q3"></h1>
 </body>
 <script>
 	function correct() {
@@ -58,6 +66,18 @@
         
     function correct2() {
     	document.getElementById("q2").innerHTML = "correct";
+        }
+        
+    function incorrect2() {
+    	document.getElementById("q2 inc").innerHTML = "you need to watch more star wars, you got it incorrect";
+        }
+        
+    function incorrect3() {
+    	document.getElementById("q3 inc").innerHTML = "you need to watch more star wars, you got it incorrect";
+        }
+        
+    function correct3() {
+    	document.getElementById("q3").innerHTML = "correct"
         }
     
 </script>
