@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
 <style>
+	.end{
+    font-size: 30px;
+    color: gold;
+    text-align: center;
+    }
+
 	.q{
     color: gold;
     font-size: 50px;
@@ -54,6 +60,11 @@
 <button onclick="correct3()"px>Carbonite</button>
 <h1 id="q3 inc"></h1>
 <h1 id="q3"></h1>
+<h1 class="end">if you got 3 out of 3 questions you are great at star wars trivia</h1>
+<h1 class="end">if you got 2 out of 3 questions you are good at star wars trivia</h1>
+<h1 class="end">if you got 1 out of 3 questions you are ok at star wars trivia</h1>
+<h1 class="end">if you got 0 out of 3 questions you are bad at star wars trivia</h1>
+<img src="https://th.bing.com/th/id/OIP.pBdOuLW3zkj5DjYslbKg7QHaEK?w=286&h=180&c=7&r=0&o=5&pid=1.7">
 </body>
 <script>
 	function correct() {
@@ -77,9 +88,9 @@
         }
         
     function correct3() {
-    	document.getElementById("q3").innerHTML = "correct"
+    	document.getElementById("q3").innerHTML = "correct";
         }
-    
+        
 </script>
 
 </html>
